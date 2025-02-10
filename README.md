@@ -84,7 +84,6 @@ Traditional mobile development often requires:
 - [Expo Go Download Page](https://expo.dev/go)
 
 ## Personal Development Notes
-## Personal Development Notes
 
 ### My Expo Go Setup Journey
 
@@ -150,4 +149,88 @@ npm install -g expo-cli
 
 ---
 
-**Happy Coding! 🚀📱** --yosef
+### Project Initialization Steps
+
+#### 1. Navigate to Project Directory
+```bash
+cd prodev-mobile-setup
+```
+
+#### 2. Create Expo Project
+```bash
+npx create-expo-app@latest .
+```
+
+#### 3. Modify Home Screen
+Open `app/(tabs)/index.tsx` and modify the default text:
+- **Before:** `Welcome!`
+- **After:** `First App Created`
+
+#### 4. Run the Application
+Start the Expo development server:
+```bash
+npx expo start
+```
+
+**Device-Specific Testing:**
+- **iOS:** Scan QR code using the device's Camera app
+- **Android:** Scan QR code using Expo Go app
+
+### Project Reset Command
+```bash
+npm run reset-project
+```
+
+### Detailed Setup Observations
+
+#### Project Scaffolding Process
+When running `create-expo-app`, I observed the following:
+- Automatic installation of necessary dependencies
+- Generation of a standard React Native project structure
+- Creation of configuration files for Expo development
+
+#### Project Reset Command Insights
+Running `npm run reset-project` resulted in:
+- Clearing of cached files
+- Resetting the project to its initial configuration
+- Potential removal of temporary development artifacts
+
+### Project Structure Overview
+```
+prodev-mobile-setup/
+│
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx     # Main screen
+│   │   └── two.tsx       # Secondary screen
+│
+├── components/           # Reusable components
+├── constants/            # Constant values
+├── hooks/                # Custom React hooks
+└── app.json              # Expo configuration
+```
+
+### Key Learnings
+- Expo simplifies mobile app project setup
+- React Native uses a component-based architecture
+- Expo Router provides intuitive navigation
+- Project reset helps maintain a clean development environment
+
+### Potential Challenges Encountered
+- Initial configuration complexity
+- Understanding Expo Router's file-based routing
+- Ensuring correct dependencies are installed
+
+### Recommended Next Steps
+- Explore component creation
+- Implement basic navigation
+- Add custom styling
+- Integrate state management
+
+---
+
+**Your mobile development journey begins here! 🚀📱**
+
+**Coding is a journey, not a destination! 🚀📱**
+
+**Happy Coding! 🚀📱** -- yosef
