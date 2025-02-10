@@ -84,7 +84,69 @@ Traditional mobile development often requires:
 - [Expo Go Download Page](https://expo.dev/go)
 
 ## Personal Development Notes
-*Document your specific setup experience, challenges, and solutions here.*
+## Personal Development Notes
+
+### My Expo Go Setup Journey
+
+#### Initial Challenges
+When I first started setting up my React Native development environment, I encountered several hurdles that tested my problem-solving skills:
+
+**Day 1: Node.js Installation**
+- Initially installed an older version of Node.js
+- Discovered compatibility issues with Expo CLI
+- Solution: Uninstalled the previous version and downloaded Node.js LTS from the official website
+- Tip: Use `nvm` (Node Version Manager) for easier version management
+
+**Day 2: Expo Go App Installation**
+- Tried installing Expo Go on an older Android device (5-year-old smartphone)
+- Faced compatibility warning with the latest Expo SDK
+- Learned that my device's Android version was too old
+- Workaround: Used a colleague's newer smartphone for initial development
+
+**Day 3: First Project Setup**
+```bash
+# Initial project creation command
+npx create-expo-app my-first-mobile-app
+cd my-first-mobile-app
+npm start
+```
+
+**Unexpected Hurdle:** Firewall on my university network blocked Expo development server
+- Resolved by:
+  1. Configuring network settings
+  2. Using mobile hotspot for initial testing
+  3. Consulting IT support for network configuration
+
+#### Key Learnings
+1. Always check device compatibility before starting
+2. Keep development tools updated
+3. Have a backup device or testing strategy
+4. Network configurations can impact mobile development
+
+#### Recommended Personal Setup
+- Primary Development Device: Laptop with 16GB RAM
+- Mobile Testing: Samsung Galaxy A52 (Android)
+- Backup Testing: iPhone 12 (iOS)
+- Development IDE: VS Code with React Native extensions
+
+**Pro Tip:** Create a dedicated development workspace folder and use version control (Git) from the beginning of your project.
+
+### Personal Environment Configuration
+```bash
+# Verify installations
+node --version
+npm --version
+expo --version
+
+# Global Expo CLI installation
+npm install -g expo-cli
+```
+
+### Continuous Learning Path
+- [ ] Complete basic Expo tutorials
+- [ ] Build first mobile app prototype
+- [ ] Explore advanced React Native concepts
+- [ ] Learn state management techniques
 
 ---
 
